@@ -1,8 +1,6 @@
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+package ParamedicRepository.entity;
+
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -12,8 +10,8 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false)
     private String name;
-    private String email;
 
     @OneToMany(mappedBy = "student")
     private List<Scenario> scenarios;
@@ -23,10 +21,11 @@ public class Student {
     public Student() {
     }
 
-    public Student(String name, String email) {
+    public Student(String name) {
         this.name = name;
-        this.email = email;
     }
+
+    // Getters and setters
 
     public Long getId() {
         return id;
@@ -42,14 +41,6 @@ public class Student {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public List<Scenario> getScenarios() {

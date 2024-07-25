@@ -1,4 +1,4 @@
-package com.ParamedicRepository.Capstone;
+package ParamedicRepository;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,5 +9,4 @@ public class ParamedicScenarioRepositoryApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ParamedicScenarioRepositoryApplication.class, args);
 	}
-
 }

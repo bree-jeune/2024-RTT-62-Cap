@@ -1,4 +1,4 @@
-package com.ParamedicRepository.Capstone;
+package ParamedicRepository;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

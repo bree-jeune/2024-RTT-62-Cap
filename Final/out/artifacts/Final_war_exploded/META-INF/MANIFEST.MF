@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: jeune
+Build-Jdk: Oracle OpenJDK 17.0.7
+Implementation-Title: Paramedic Scenario Repository
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: Final
+Main-Class: ${start-class}
+

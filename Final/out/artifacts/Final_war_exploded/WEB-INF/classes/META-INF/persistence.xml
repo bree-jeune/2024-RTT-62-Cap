@@ -10,9 +10,9 @@
         <!-- Add other entity classes here -->
         <properties>
             <!-- JDBC connection properties -->
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ParamedicRepository"/>
-            <property name="jakarta.persistence.jdbc.user" value="root"/>
-            <property name="jakarta.persistence.jdbc.password" value="@Ebyo6311!"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/yourdatabase"/>
+            <property name="jakarta.persistence.jdbc.user" value="yourusername"/>
+            <property name="jakarta.persistence.jdbc.password" value="yourpassword"/>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
 
             <!-- Hibernate properties -->

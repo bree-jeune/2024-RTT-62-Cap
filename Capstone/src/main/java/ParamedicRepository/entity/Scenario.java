@@ -1,15 +1,10 @@
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Column;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+package ParamedicRepository.entity;
+
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 public class Scenario {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -26,17 +21,22 @@ public class Scenario {
     @Column(nullable = false)
     private String difficultyLevel;
 
+    @ManyToOne
+    private Student student;
+
     // Constructors, getters, and setters
 
-    public ParamedicScenario() {
+    public Scenario() {
     }
 
-    public ParamedicScenario(String title, String description, Date dateCreated, String difficultyLevel) {
+    public Scenario(String title, String description, Date dateCreated, String difficultyLevel) {
         this.title = title;
         this.description = description;
         this.dateCreated = dateCreated;
         this.difficultyLevel = difficultyLevel;
     }
+
+    // Getters and setters
 
     public Long getId() {
         return id;
@@ -77,11 +77,6 @@ public class Scenario {
     public void setDifficultyLevel(String difficultyLevel) {
         this.difficultyLevel = difficultyLevel;
     }
-
-    @ManyToOne
-    private Student student;
-
-    // Getters and setters for student
 
     public Student getStudent() {
         return student;

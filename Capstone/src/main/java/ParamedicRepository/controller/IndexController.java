@@ -1,4 +1,4 @@
-package controller;
+package ParamedicRepository.controller;
 
 import lombok.extern.slf4j.*;
 import org.springframework.stereotype.*;
